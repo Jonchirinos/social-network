@@ -40,7 +40,7 @@ const controllers = {
             .then((user) =>
                 !user
                     ? res.status(404).json({
-                          message: "No user found with this id!",
+                          message: "No user found with this ID",
                       })
                     : res.json(user)
             )
@@ -49,20 +49,20 @@ const controllers = {
     // DELETE user by id
     deleteUser(req, res) {
         User.findOneAndRemove({ _id: req.params.userId })
-            .then((user) => !user, res.status(404).json({ message: "No user found with that id." }))
+            .then((user) => !user, res.status(404).json({ message: "No user found with that ID" }))
             .then(() => res.status({ message: "User removed." }))
             .catch((err) => res.status(500).json(err));
     },
     // BONUS: POST to add to friend list
     addFriend(req, res) {
         User.findOneAndUpdate({ _id: req.params.userId }, { $addToSet: { friends: req.params.friendId } }, { runValidators: true, new: true })
-            .then((user) => (!user ? res.status(404).json({ message: "Friend added to list!" }) : res.json(user)))
+            .then((user) => (!user ? res.status(404).json({ message: "Friend added to your friend's list" }) : res.json(user)))
             .catch((err) => res.status(500).json(err));
     },
     // BONUS: DELETE to remove friend from friend list
     deleteFriend(req, res) {
         User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { runValidators: true, new: true })
-            .then((friend) => (!friend ? res.status(404).json({ message: "No friend found with that id." }) : res.json(friend)))
+            .then((friend) => (!friend ? res.status(404).json({ message: "No friend found with that ID" }) : res.json(friend)))
             .catch((err) => res.status(500).json(err));
     },
 };
