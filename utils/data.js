@@ -2,39 +2,39 @@
 
 const thoughts = [
     {
-        thoughtText: "",
-        username: "",
+        thoughtText: "Elden Ring might be one of the greatest games ever created",
+        username: "Eldenlord",
     },
     {
-        thoughtText: "",
-        username: "",
+        thoughtText: "Yes I really did just slap the sh*t out of you @ChrisRock",
+        username: "wSmith123",
     },
     {
-        thoughtText: "",
-        username: "",
+        thoughtText: "Water is wet",
+        username: "hydrati0nHomie",
     },
     {
-        thoughtText: "",
-        username: "",
+        thoughtText: "Who the hell is dAvId bLaInE >:[ ?",
+        username: "cAngelMagicGOAT",
     },
 ];
-
+// users
 const users = [
     {
-        username: "",
-        email: "",
+        username: "Eldenlord",
+        email: "craigjensen@aol.com",
     },
     {
-        username: "",
-        email: "",
+        username: "wSmith123",
+        email: "ilovejada@yahoo.com",
     },
     {
-        username: "",
-        email: "",
+        username: "hydrati0nHomie",
+        email: "chirinosjon@gmail.com",
     },
     {
-        username: "",
-        email: "",
+        username: "cAngelMagicGOAT",
+        email: "chrisangel@mindfreak.com",
     },
 ];
 // Export the functions for use in seed.js
