@@ -24,4 +24,4 @@ With social media becoming a staple in our daily lives, I used this project to s
 
 ## Links to Application
 
--   Here is the repo: [Jon's Tech Blog Repo](https://github.com/Jonchirinos/social-network)
+-   Here is the repo: [Jon's Social Network API Repo](https://github.com/Jonchirinos/social-network)
